@@ -9,9 +9,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #FFFFFF;
+  
 }
 body{
+  background-color: #FFFFFF;
   margin-right: 7%;
   margin-left: 7%;
 }
