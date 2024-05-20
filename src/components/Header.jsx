@@ -2,6 +2,7 @@ import logo from "../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import ButtonComp from "./ButtonComp";
 
 const Header = () => {
   let Links = [
@@ -42,10 +43,8 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div>
-          <button className="hidden   md:flex md:px-2 md:py-2 mt-4 px-4 py-4 rounded-tl-xl rounded-br-xl bg-primary hover:bg-orange-500  text-white ">
-            Book A Table
-          </button>
+        <div className="hidden md:flex md:px-2 md:py-2">
+          <ButtonComp txt1="Book A Table"/>
         </div>
         <div className="flex items-center md:hidden">
           <button onClick={() => setIsNavOpen(!isNavOpen)} className="text-2xl">
