@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import ButtonComp from "./ButtonComp";
+
 
 const Header = () => {
   let Links = [
@@ -43,8 +43,8 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div className="hidden md:flex md:px-2 md:py-2">
-          <ButtonComp txt1="Book A Table"/>
+        <div className="hidden md:flex md:px-2 md:py-2 mt-4">
+        <button className='px-4 py-4 rounded-tl-xl rounded-br-xl bg-primary hover:bg-orange-500  text-white '>Book A Table</button>
         </div>
         <div className="flex items-center md:hidden">
           <button onClick={() => setIsNavOpen(!isNavOpen)} className="text-2xl">
@@ -55,7 +55,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isNavOpen && (
-        <div className="md:hidden bg-orange-500 w-full py-4  rounded  ">
+        <div className="md:hidden bg-orange-500 w-full  h-[50%]  py-4 rounded absolute  left-0 z-50">
           <nav>
             <ul className="flex flex-col items-center gap-4 text-white">
               {Links.map((link) => (
