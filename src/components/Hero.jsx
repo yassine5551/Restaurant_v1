@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import heroLogo from "../assets/hero_logo.png";
 import heroDish from "../assets/hero_dish.png";
 import Maskhero from "../assets/MaskHero.png";
+import zaater from "../assets/zaater_img.png"
+import zaaterRow from "../assets/zaater_row_img.png"
+import Flower from "../assets/flower_img.png"
 import {
   faFacebook,
   faInstagram,
@@ -41,8 +44,12 @@ const Hero = () => {
         </div>
         {/* rightSide */}
         <div className="relative">
-          <div className="md:w-[400px] w-[300px]">
-            <img src={Maskhero} alt=""  />
+          <div className="md:w-[400px] w-[300px] relative">
+            <img src={Maskhero} alt="" />
+            <img src={zaater} className=" absolute bottom-0 right-[-6rem] z-[-1]" alt="" />
+            <img src={zaaterRow} className=" absolute top-[-4rem] left-[-10rem] z-[-1]" alt="" />
+            <img src={Flower} className=" absolute top-[-6rem] right-[-6rem] z-[-1]" alt="" />
+
           </div>
           <div className="md:w-[200px] w-[150px] absolute md:top-[22rem] md:left-[-7rem] top-[-5rem] left-[-3rem]">
             <img src={heroDish} alt=""  />
