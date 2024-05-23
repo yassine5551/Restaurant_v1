@@ -7,6 +7,7 @@ import Maskhero from "../assets/MaskHero.png";
 import zaater from "../assets/zaater_img.png";
 import zaaterRow from "../assets/zaater_row_img.png";
 import Flower from "../assets/flower_img.png";
+
 import {
   faFacebook,
   faInstagram,
@@ -58,17 +59,17 @@ const Hero = () => {
             <img src={Maskhero} alt="" />
             <img
               src={zaater}
-              className=" absolute bottom-0 right-[-6rem] z-[-1]"
+              className=" absolute bottom-0 right-[-6rem] z-[-1] opacity-45"
               alt=""
             />
             <img
               src={zaaterRow}
-              className=" absolute top-[-4rem] left-[-10rem] z-[-1]"
+              className=" absolute top-[-4rem] left-[-10rem] z-[-1] opacity-45"
               alt=""
             />
             <img
               src={Flower}
-              className=" absolute top-[-6rem] right-[-6rem] z-[-1]"
+              className=" absolute top-[-6rem] right-[-6rem] z-[-1] opacity-45"
               alt=""
             />
           </div>
