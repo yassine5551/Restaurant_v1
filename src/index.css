@@ -4,14 +4,17 @@
 @tailwind utilities;
 
 
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   
+  
 }
 body{
+  --swiper-pagination-color: #EA6D27;
   background-color: #e9e7e7f5;
   margin-right: 7%;
   margin-left: 7%;

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, A11y } from "swiper/modules";
+import { Autoplay, Pagination, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -8,6 +8,7 @@ import dish1 from "../assets/dish1.png";
 import dish2 from "../assets/dish5.png";
 import dish3 from "../assets/dish3.png";
 import dish4 from "../assets/dish4.png";
+import menuMain from "../assets/menuMain.pdf"
 const Cards = () => {
   const Dishes = [
     {
@@ -38,30 +39,110 @@ const Cards = () => {
       description:
         "Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor ",
     },
+    {
+      title: "Egg and Cocumber",
+      image: dish1,
+      price: 40,
+      description:
+        "Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor ",
+    },
+    {
+      title: "Egg and Cocumber",
+      image: dish3,
+      price: 40,
+      description:
+        "Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor ",
+    },
+    {
+      title: "Egg and Cocumber",
+      image: dish2,
+      price: 40,
+      description:
+        "Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor ",
+    },
+    {
+      title: "Egg and Cocumber",
+      image: dish1,
+      price: 40,
+      description:
+        "Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor ",
+    },
+    {
+      title: "Egg and Cocumber",
+      image: dish4,
+      price: 40,
+      description:
+        "Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor ",
+    },
   ];
   return (
     <>
-      <div className="flex items-center justify-center flex-col">
-        <h1>Our Special Dishes</h1>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </span>
+      <div className="flex items-center gap-6 justify-center flex-col mt-[5rem]">
+        <h1 className="text-secondary text-3xl font-bold text-center tracking-widest">
+          Our Special Dishes
+        </h1>
+        <span className="text-center text-smT mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt .<a href={menuMain} target="_blank" className="ml-1 text-bold text-md text-primary underline">| Menu pdf here.. |</a>
+        </span>
         <Swiper
-          modules={[Pagination, A11y]}
-          spaceBetween={10}
-          slidesPerView={3}
+          // for responsive
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            400: {
+              slidesPerView: 2,
+            },
+            639: {
+              slidesPerView: 3,
+            },
+            865: {
+              slidesPerView: 4,
+            },
+            1000: {
+              slidesPerView: 4,
+            },
+            1500: {
+              slidesPerView: 4,
+            },
+            1700: {
+              slidesPerView: 7,
+            },
+          }}
+          modules={[Pagination, A11y, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={4}
           pagination={{ clickable: true }}
-          className="w-full h-full"
+          // infinit loop
+          loop={true}
+          grabCursor={true}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          className="w-full h-auto flex flex-col "
         >
-          
           {Dishes.map((item) => (
-            <SwiperSlide key={item.title}>
-              <div className="relative flex justify-center items-center flex-col mt-12">
-                <img className=" w-[207px] h-[207px]" src={item.image} alt="" />
-                <span className="absolute flex items-center justify-center top-[1.9rem] right-[4.5rem] rounded-full w-[54px] h-[54px] bg-black text-white">
+            <SwiperSlide key={item.title} className=" pt-[5rem] pb-[2rem] ">
+              <div className="relative flex justify-center items-center flex-col gap-6 mb-[3rem] ">
+                <img
+                  className=" lg:w-[207px] lg:h-[207px]  rounded-full "
+                  src={item.image}
+                  alt=""
+                />
+                <span className="w-[15px] h-[15px] bg-primary rounded-full absolute top-[.8rem] right-[3.5rem] lg:top-[0.7rem] lg:right-[1.2rem] z-10 animate-bounce"></span>
+                <span className="absolute flex items-center justify-center shadow-xl lg:top-[0.9rem] lg:right-[1rem] top-[1.1rem]  right-[3.8rem] rounded-full w-[35px] h-[35px] lg:w-[54px] lg:h-[54px] bg-secondary text-white text-sm lg:text-lg ">
                   ${item.price}
                 </span>
 
-                <h2>{item.title}</h2>
-                <p>{item.description}</p>
+                <h2 className="text-secondary text-center font-semibold lg:leading-3 text-md">
+                  {item.title}
+                </h2>
+                <span className="text-center text-sm text-smT ">
+                  {item.description}
+                </span>
               </div>
             </SwiperSlide>
           ))}
