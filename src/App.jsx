@@ -1,10 +1,8 @@
-import Cards from "./components/Cards"
-import Header from "./components/Header"
-import Hero from "./components/Hero"
-import Details from "./components/Details"
-
-
-
+import Cards from "./components/Cards";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Details from "./components/Details";
+import Chef from "./components/Chef";
 
 function App() {
   return (
@@ -12,9 +10,10 @@ function App() {
       <Header />
       <Hero />
       <Cards />
-      <Details/>
+      <Details />
+      <Chef />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
