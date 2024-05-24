@@ -59,17 +59,17 @@ const Hero = () => {
             <img src={Maskhero} alt="" />
             <img
               src={zaater}
-              className=" absolute bottom-0 right-[-6rem] z-[-1] opacity-45"
+              className=" absolute bottom-0 right-[-6rem] z-[-1] opacity-60"
               alt=""
             />
             <img
               src={zaaterRow}
-              className=" absolute top-[-4rem] left-[-10rem] z-[-1] opacity-45"
+              className=" absolute top-[-4rem] left-[-10rem] z-[-1] opacity-60"
               alt=""
             />
             <img
               src={Flower}
-              className=" absolute top-[-6rem] right-[-6rem] z-[-1] opacity-45"
+              className=" absolute top-[-6rem] right-[-6rem] z-[-1] opacity-60"
               alt=""
             />
           </div>

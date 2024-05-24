@@ -18,7 +18,7 @@ const Details = () => {
             <img src={dish} alt="" />
             <img
               src={Flower}
-              className=" absolute lg:top-[-10rem] top-[-8rem] left-[-5rem] lg:left-[-5rem] z-[-1] opacity-30"
+              className=" absolute lg:top-[-10rem] top-[-8rem] left-[-5rem] lg:left-[-5rem] z-[-1] "
               alt=""
             />
             <img
@@ -42,17 +42,17 @@ const Details = () => {
         <div className="flex flex-col relative ">
           <img
             src={zaater}
-            className=" absolute lg:top-[-20rem] lg:left-[-15rem] lg:block hidden z-[-10] opacity-30"
+            className=" absolute lg:top-[-20rem] lg:left-[-15rem] lg:block hidden z-[-10] opacity-60 "
             alt=""
           />
           <img
             src={zaaterRow}
-            className=" absolute bottom-[-4rem] right-[-5rem] z-[-1] opacity-30"
+            className=" absolute bottom-[-4rem] right-[-5rem] z-[-1] opacity-60 "
             alt=""
           />
           <img
             src={Flower}
-            className=" absolute bottom-[-5rem] left-[-15rem] z-[-1] opacity-30"
+            className=" absolute bottom-[-5rem] left-[-15rem] z-[-1] opacity-45"
             alt=""
           />
 
