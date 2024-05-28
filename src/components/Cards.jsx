@@ -146,8 +146,8 @@ const Cards = () => {
           alt=""
           className="absolute top-0 left-0 w-[150px] lg:w-[180px] lg:top-[-1.5rem] lg:left-[12rem] z-[-10] opacity-90 lg:opacity-70 "
         />
-        <h1 className="text-secondary text-3xl font-bold text-center tracking-widest mb-2">
-          Our Special Dishes
+        <h1 className="text-secondary lg:text-4xl text-3xl font-bold text-center tracking-widest mb-2">
+          Our Special <span className="text-primary">Dishes</span> 
         </h1>
         <span className="text-center text-smT mb-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

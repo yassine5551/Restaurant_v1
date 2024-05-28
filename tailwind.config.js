@@ -7,6 +7,7 @@ export default {
         primary: "#EA6D27",
         secondary: "#101A24",
         smT: "#5C6574",
+        cardsColor : "#FFFFFF"
       },
     },
   },

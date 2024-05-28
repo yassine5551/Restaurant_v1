@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Details from "./components/Details";
 import Chef from "./components/Chef";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Cards />
       <Details />
       <Chef />
+      <Testimonials/>
     </>
   );
 }
