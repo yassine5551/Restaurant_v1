@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Details from "./components/Details";
 import Chef from "./components/Chef";
 import Testimonials from "./components/Testimonials";
+import NewsLatter from "./components/NewsLatter";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Cards />
       <Details />
       <Chef />
-      <Testimonials/>
+      <Testimonials />
+      <NewsLatter/>
     </>
   );
 }
