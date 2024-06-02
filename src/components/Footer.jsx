@@ -77,7 +77,7 @@ const Footer = () => {
       <div className="flex justify-between items-center mt-6 text-sm">
 
         <p className="text-smT"><FontAwesomeIcon icon={faCopyright}/> 2022 Restaurants. All Right Reserved. Designed by <span className="font-bold">Isaac</span> </p>
-        <div className="text-smT flex gap-2 lg:gap-6 text-[0.8rem] lg:text-sm ">
+        <div className="text-smT flex gap-2 lg:gap-6 text-[0.8rem] lg:text-sm mb-3">
           <a href="" className="">Terms of Service</a>
           <a href="">Privacy Policy</a>
         </div>
