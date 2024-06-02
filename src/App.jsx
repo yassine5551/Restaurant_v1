@@ -5,6 +5,7 @@ import Details from "./components/Details";
 import Chef from "./components/Chef";
 import Testimonials from "./components/Testimonials";
 import NewsLatter from "./components/NewsLatter";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Details />
       <Chef />
       <Testimonials />
-      <NewsLatter/>
+      <NewsLatter />
+      <Footer/>
     </>
   );
 }
