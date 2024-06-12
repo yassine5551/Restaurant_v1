@@ -11,8 +11,7 @@ import dish3 from "../assets/dish3.png";
 import dish4 from "../assets/dish4.png";
 ///
 import menuMain from "../assets/menuMain.pdf";
-import zaater from "../assets/zaater_img.png";
-import Flower from "../assets/flower_img.png";
+
 
 // jus images
 import creme from "../assets/cards/creme.jpg";
@@ -136,16 +135,7 @@ const Cards = () => {
   return (
     <>
       <div className="relative flex items-center  justify-center flex-col mt-[5rem]">
-        <img
-          src={zaater}
-          alt=""
-          className="absolute top-[3rem] right-[-2rem] w-[150px] lg:top-[-3.6rem] lg:right-[15rem] z-[-10] lg:w-[180px] opacity-40"
-        />
-        <img
-          src={Flower}
-          alt=""
-          className="absolute top-0 left-0 w-[150px] lg:w-[180px] lg:top-[-1.5rem] lg:left-[12rem] z-[-10] opacity-90 lg:opacity-70 "
-        />
+        
         <h1 className="text-secondary lg:text-4xl text-3xl font-bold text-center tracking-widest mb-2">
           Our Special <span className="text-primary">Dishes</span> 
         </h1>

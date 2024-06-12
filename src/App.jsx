@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
+    <div className="mx-[7%]">
       <Header />
       <Hero />
       <Cards />
@@ -18,6 +19,7 @@ function App() {
       <Testimonials />
       <NewsLatter />
       <Footer/>
+      </div>
     </>
   );
 }

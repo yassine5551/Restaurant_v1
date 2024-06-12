@@ -1,9 +1,7 @@
 import ButtonComp from "./ButtonComp";
 import ButtonComp2 from "./ButtonComp2";
 import dish from "../assets/3rdSection_dish.png";
-import zaater from "../assets/zaater_img.png";
-import zaaterRow from "../assets/zaater_row_img.png";
-import Flower from "../assets/flower_img.png";
+
 // leafs
 import leaf1 from "../assets/leaf-1.png";
 import leaf2 from "../assets/leaf-2.png";
@@ -16,11 +14,7 @@ const Details = () => {
         <div className="relative">
           <div className="lg:w-[600px]  w-[300px] relative">
             <img src={dish} alt="" />
-            <img
-              src={Flower}
-              className=" absolute lg:top-[-10rem] top-[-8rem] left-[-5rem] lg:left-[-5rem] z-[-1] "
-              alt=""
-            />
+           
             <img
               src={leaf1}
               alt=""
@@ -40,22 +34,6 @@ const Details = () => {
         </div>
         {/* leftSide */}
         <div className="flex flex-col relative ">
-          <img
-            src={zaater}
-            className=" absolute lg:top-[-20rem] lg:left-[-15rem] lg:block hidden z-[-10] opacity-60 "
-            alt=""
-          />
-          <img
-            src={zaaterRow}
-            className=" absolute bottom-[-4rem] right-[-5rem] z-[-1] opacity-60 "
-            alt=""
-          />
-          <img
-            src={Flower}
-            className=" absolute bottom-[-5rem] left-[-15rem] z-[-1] opacity-45"
-            alt=""
-          />
-
           <div className="flex flex-col gap-8 ">
             <h1 className="tracking-wide font-bold text-4xl lg:text-5xl leading-normal mb-2 md:mb-3 text-secondary ">
               Wecome to Our <br />
