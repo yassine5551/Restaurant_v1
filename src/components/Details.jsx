@@ -9,7 +9,7 @@ import leaf3 from "../assets/leaf-3.png";
 const Details = () => {
   return (
     <>
-      <div className="flex md:flex-row flex-col justify-between gap-[5rem]  mt-[90px] items-center ">
+      <div id="details" className="animationScroll flex md:flex-row flex-col justify-between gap-[5rem]  mt-[90px] items-center ">
         {/* rightSide */}
         <div className="relative">
           <div className="lg:w-[600px]  w-[300px] relative">
@@ -36,7 +36,7 @@ const Details = () => {
         <div className="flex flex-col relative ">
           <div className="flex flex-col gap-8 ">
             <h1 className="tracking-wide font-bold text-4xl lg:text-5xl leading-normal mb-2 md:mb-3 text-secondary ">
-              Wecome to Our <br />
+              Welcome to Our <br />
               <span className="text-primary">Restaurant</span>
             </h1>
             <p className="text-sm text-smT">

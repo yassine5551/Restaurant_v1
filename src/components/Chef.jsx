@@ -32,9 +32,9 @@ const ChefSection = () => {
   ];
   return (
     <>
-      <div className="flex md:flex-row flex-col-reverse justify-between gap-[5rem]  mt-[150px] items-center ">
+      <div id="chef" className="flex md:flex-row flex-col-reverse justify-between gap-[5rem]  mt-[150px] items-center ">
         {/* leftSide */}
-        <div className="flex flex-col relative ">
+        <div className="animationScroll flex flex-col relative ">
           <div className="flex flex-col gap-8 ">
             <h1 className="tracking-wide font-bold text-4xl lg:text-5xl leading-normal mb-2 md:mb-6 text-secondary ">
             Our Expects 
@@ -61,7 +61,7 @@ const ChefSection = () => {
           </div>
         </div>
         {/* rightSide */}
-        <div className="relative">
+        <div className="viewAnimLeft relative">
           <div className="md:w-[400px] w-[300px] relative">
             <img src={chef} alt="" />
           </div>

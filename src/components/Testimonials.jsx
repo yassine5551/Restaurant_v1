@@ -55,13 +55,13 @@ const Testimonials = () => {
   ];
   return (
     <>
-      <div className="relative flex items-center  justify-center flex-col mt-[5rem]">
-        <img src={testimonials_img} alt="ma9la" className="absolute left-[-5rem] top-0 h-[100%] " />
+      <div id="Customer" className="relative flex items-center  justify-center flex-col mt-[5rem]">
+        <img src={testimonials_img} alt="ma9la" className="viewAnimLeft absolute left-[-5rem] top-0 h-[100%] " />
         
-        <h1 className="text-secondary lg:text-4xl text-3xl font-bold text-center tracking-widest mb-2">
+        <h1 className="animationScroll text-secondary lg:text-4xl text-3xl font-bold text-center tracking-widest mb-2">
           Our Happy <span className="text-primary"> Customers</span>
         </h1>
-        <span className="text-center text-smT mb-5">
+        <span className="animationScroll text-center text-smT mb-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />
           eiusmod tempor incididunt
         </span>
@@ -79,14 +79,14 @@ const Testimonials = () => {
           {Testimonials.map((item) => (
             <SwiperSlide
               key={item.title}
-              className="flex justify-center items-center pt-[5rem] pb-[0.5rem]"
+              className=" flex justify-center items-center pt-[5rem] pb-[0.5rem]"
             >
-              <div className="px-6 relative flex gap-12 flex-col bg-cardsColor justify-center items-center shadow-md shadow-secondary rounded-br-3xl w-[639px] h-[446px] border-[2px] border-smT">
-                <div className="absolute flex flex-col justify-center items-center top-[-13%] gap-0">
-                  <img src={item.img} alt=""  className="w-[109px] h-[109px]"/>
+              <div className=" px-6 relative flex gap-12 flex-col bg-cardsColor justify-center items-center shadow-md shadow-secondary rounded-br-3xl w-[639px] h-[446px] border-[2px] border-smT">
+                <div className="animationScroll absolute flex flex-col justify-center items-center top-[-13%] gap-0">
+                  <img src={item.img} alt=""  className=" w-[109px] h-[109px]"/>
                   <img src={item.rating} alt="" />
                 </div>
-                <div className="text-center text-wrap mt-16">
+                <div className=" text-center text-wrap mt-16">
                   <span className="text-smT">{item.text}</span>
                 </div>
                 <div className="flex flex-col justify-center items-center text-center capitalize ">

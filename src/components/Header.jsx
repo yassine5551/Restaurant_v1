@@ -1,15 +1,17 @@
 import logo from "../assets/logo.png";
+import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   let Links = [
-    { name: "Menu", link: "/menu" },
-    { name: "Events", link: "/Events" },
-    { name: "Gallery", link: "/Gallery" },
-    { name: "About", link: "/About" },
-    { name: "Contact", link: "/Contact" },
+    { name: "Home", to: "hero" },
+    { name: "Menu", to: "cards" },
+    {name:'About', to:'details'},
+    { name: "Our chef", to: "chef" },
+    { name: "Customer", to: "Customer" },
+    { name: "Contact", to: "newsLatter" },
   ];
 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -27,15 +29,22 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex md:flex-row justify-between items-center w-full h-[80px] px-6">
-        <div className="flex justify-center items-center z-[100]">
+      <div className=" flex md:flex-row justify-between items-center w-full h-[80px] px-6 ">
+        <div
+          className={`${
+            isNavOpen ? "fixed top-5 z-[1000]" : ""
+          } " flex justify-center items-center z-[1000]"`}
+        >
           <img className="w-36" src={logo} alt="" />
         </div>
         <nav className="hidden md:flex md:text-sm mt-4">
           <ul className="flex flex-row justify-center items-center gap-6 md:gap-2 lg:gap-8">
             {Links.map((link) => (
-              <li key={link.name} className="cursor-pointer hover:text-primary">
-                <a href={link.link}>{link.name}</a>
+              <li
+                key={link.name}
+                className="cursor-pointer hover:text-primary font-[500]"
+              >
+                <Link to={link.to} smooth={true} duration={500}>{link.name}</Link>
               </li>
             ))}
           </ul>
@@ -45,8 +54,15 @@ const Header = () => {
             Book A Table
           </button>
         </div>
-        <div className="flex items-center md:hidden z-[100]">
-          <button onClick={() => (isNavOpen ? handleCloseNav() : handleOpenNav())} className="text-2xl">
+        <div
+          className={`${
+            isNavOpen ? "fixed top-5 right-10 z-[1000]" : ""
+          }  "flex items-center justify-center md:hidden z-[100]"`}
+        >
+          <button
+            onClick={() => (isNavOpen ? handleCloseNav() : handleOpenNav())}
+            className="text-2xl"
+          >
             <FontAwesomeIcon icon={isNavOpen ? faTimes : faBars} />
           </button>
         </div>
@@ -54,13 +70,17 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isNavOpen && (
-        <div className={`absolute z-10 bg-orange-300 top-0 left-0 flex justify-center items-center h-full w-full ${isAnimating ? 'anim' : 'anim-closed'}`}>
-          <div className={isAnimating ? '' : 'anim-closed'}>
+        <div
+          className={`fixed bottom-0 z-10 bg-orange-300 top-0 left-0 flex justify-center items-center h-full w-full  ${
+            isAnimating ? "anim" : "anim-closed"
+          }`}
+        >
+          <div className={isAnimating ? "" : "anim-closed"}>
             <nav>
               <ul className="flex flex-col items-center gap-4 text-white text-2xl">
                 {Links.map((link) => (
                   <li key={link.name} className="cursor-pointer">
-                    <a href={link.link}>{link.name}</a>
+                    <Link to={link.link}>{link.name}</Link>
                   </li>
                 ))}
                 <li>

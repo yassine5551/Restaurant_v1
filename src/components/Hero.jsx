@@ -14,11 +14,11 @@ import {
 const Hero = () => {
   return (
     <>
-      <div className="flex md:flex-row flex-col justify-between gap-[5rem]  mt-[150px] items-center ">
+      <div  className="flex md:flex-row flex-col justify-between gap-[5rem]  mt-[150px] items-center ">
         {/* leftSide */}
         <div className="flex flex-col relative ">
           <div className="absolute md:top-[-9rem] top-[-6rem] md:left-[-2rem] left-[1rem]">
-            <img src={heroLogo} alt="" width={90} />
+            <img src={heroLogo} alt="" width={90} className="spinAnim " />
           </div>
           <div className="flex flex-col gap-8 ">
             <h1 className="tracking-wide font-bold text-4xl lg:text-5xl leading-normal mb-2 md:mb-6 text-secondary ">
