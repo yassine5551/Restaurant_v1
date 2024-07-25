@@ -1,7 +1,7 @@
 const NewsLatter = () => {
   return (
     <>
-      <div id="newsLatter" className="animationScroll mt-5 bg-newsImage bg-cover w-full h-[300px] rounded-3xl flex lg:justify-center justify-evenly items-center flex-col  gap-6">
+      <div id="newsLatter" className="autoShow mt-5 bg-newsImage bg-cover w-full h-[300px] rounded-3xl flex lg:justify-center justify-evenly items-center flex-col  gap-6">
         <div className="text-white flex justify-center  items-center  ">
           <div className="flex flex-col font-semibold lg:text-[35px] text-[20px] text-center">
           <span className="">

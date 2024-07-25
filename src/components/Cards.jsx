@@ -84,11 +84,11 @@ const Cards = () => {
   
   return (
     <>
-      <div id="cards" className="animationScroll relative flex items-center  justify-center flex-col mt-[5rem]">
-        <h1 className="text-secondary lg:text-4xl text-3xl font-bold text-center tracking-widest mb-2">
+      <div id="cards" className=" relative flex items-center  justify-center flex-col mt-[5rem]">
+        <h1 className="autoShow text-secondary lg:text-4xl text-3xl font-bold text-center tracking-widest mb-2">
           Our Special <span className="text-primary">Dishes</span>
         </h1>
-        <span className="text-center text-smT mb-5">
+        <span className="autoShow text-center text-smT mb-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt .
           <a
@@ -136,7 +136,7 @@ const Cards = () => {
             disableOnInteraction: false,
             // pauseOnMouseEnter: true,
           }}
-          className="w-full h-full flex flex-col "
+          className="autoShow w-full h-full flex flex-col "
         >
           {Dishes.map((item) => (
             <SwiperSlide key={item.title} className=" pt-[5rem] pb-[2rem] ">
