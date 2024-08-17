@@ -72,7 +72,7 @@ body{
 @keyframes AutoShow {
     from{
         opacity: 0;
-        transform: translateY(200px) scale(0.3);
+        transform: translateY(60px) scale(0.3);
         
     }to{
         opacity: 1;
@@ -105,7 +105,7 @@ body{
 @keyframes ShowLeft {
   from{
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(-60px);
   }
   to{
     opacity: 1;
@@ -120,7 +120,7 @@ body{
 @keyframes ShowRight {
   from{
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(60px);
   }
   to{
     opacity: 1;
