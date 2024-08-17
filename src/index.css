@@ -17,8 +17,10 @@ body{
   --swiper-pagination-color: #EA6D27;
   background-color: #ffffff;
   overflow-x: hidden;
-  /* margin-right: 7%;
-  margin-left: 7%; */
+  scroll-behavior: smooth;
+  
+  margin-right: 4%;
+  margin-left: 4%;
 }
 
 .anim {
