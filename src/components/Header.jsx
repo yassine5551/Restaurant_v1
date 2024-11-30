@@ -80,7 +80,7 @@ const Header = () => {
               <ul className="flex flex-col items-center gap-4 text-white text-2xl">
                 {Links.map((link) => (
                   <li key={link.name} className="cursor-pointer">
-                    <Link to={link.link}>{link.name}</Link>
+                    <Link to={link.to}>{link.name}</Link>
                   </li>
                 ))}
                 <li>
