@@ -1,17 +1,17 @@
 import logo from "../assets/logo.png";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   let Links = [
-    { name: "Home", to: "hero" },
-    { name: "Menu", to: "cards" },
-    {name:'About', to:'details'},
-    { name: "Our chef", to: "chef" },
-    { name: "Customer", to: "Customer" },
-    { name: "Contact", to: "newsLatter" },
+    { name: "Home", to: "/" },
+    { name: "Menu", to: "/menu" },
+    {name:'About us', to:'/about'},
+    { name: "Our chef", to: "/chefs" },
+    { name: "Gallery", to: "/Gallery" },
+    { name: "Contact", to: "/contact" },
   ];
 
   const [isNavOpen, setIsNavOpen] = useState(false);

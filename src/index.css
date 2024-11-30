@@ -19,69 +19,10 @@ body{
   overflow-x: hidden;
   scroll-behavior: smooth;
   
-  margin-right: 4%;
-  margin-left: 4%;
+  margin-right: 7%;
+  margin-left: 7%;
 }
 
-.anim {
-  /* Define your initial animation when the navigation is opened */
-  animation: circle-in-hesitate 2.5s cubic-bezier(.25, 1, .30, 1) both;
-  
-}
-
-.anim-closed {
-  animation: circle-out-hesitate 2.5s cubic-bezier(.25, 1, .30, 1) both;
-
-}
-
-@keyframes circle-in-hesitate {
-  0% {
-    clip-path: circle(0%);
-  }
-  40% {
-    clip-path: circle(40%);
-  }
-  100% {
-    clip-path: circle(125%);
-  }
-}
-
-[transition-style="in:circle:hesitate"] {
-  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
-}
-
-@keyframes circle-out-hesitate {
-  0% {
-    clip-path: circle(125%);
-  }
-  40% {
-    clip-path: circle(40%);
-  }
-  100% {
-    clip-path: circle(0%);
-  }
-}
-
-[transition-style="out:circle:hesitate"] {
-  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-out-hesitate both;
-}
-
-.autoShow{
-    animation: AutoShow both;
-    animation-timeline:view(70% 5%) ;
-}
-
-@keyframes AutoShow {
-    from{
-        opacity: 0;
-        transform: translateY(60px) scale(0.3);
-        
-    }to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-        
-    }
-}
 
 
 @keyframes spin {
@@ -100,35 +41,7 @@ body{
 
 }
 
-.leftAppear{
-  animation: ShowLeft both;
-  animation-timeline: view(50% 5%) ;
-}
-@keyframes ShowLeft {
-  from{
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
-.rightAppear{
-  animation: ShowRight both;
-  animation-timeline: view(70% 5%) ;
-}
-@keyframes ShowRight {
-  from{
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
 
 
