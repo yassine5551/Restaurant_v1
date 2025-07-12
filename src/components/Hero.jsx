@@ -57,7 +57,7 @@ const Hero = () => {
             <img src={Maskhero} alt="" />
            
           </div>
-          <div className="md:w-[200px] w-[150px] absolute md:top-[22rem] md:left-[-7rem] top-[-5rem] left-[-3rem]">
+          <div className="md:w-[250px] w-[150px] absolute md:top-[-4rem] md:left-[-7rem] top-[-5rem] left-[-3rem]">
             <img src={heroDish} alt="" />
           </div>
         </div>

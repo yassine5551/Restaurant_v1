@@ -35,17 +35,17 @@ const Details = () => {
         {/* leftSide */}
         <div className="flex flex-col relative  ">
           <div className="flex flex-col gap-8  ">
-            <h1 className="autoShow tracking-wide font-bold text-4xl lg:text-5xl leading-normal mb-2 md:mb-3 text-secondary ">
+            <h1 className="autoShow tracking-wide font-bold text-4xl lg:text-5xl leading-normal mb-2 md:mb-3 text-secondary text-center md:text-left">
               Welcome to Our <br />
               <span className="text-primary">Restaurant</span>
             </h1>
-            <p className="autoShow text-sm text-smT">
+            <p className="autoShow text-sm text-smT text-center md:text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               <br /> sed do eiusmod tempor incididunt <br /> ut labore et dolore
               magna aliqua.
             </p>
             {/* buttons */}
-            <div className="flex gap-5 leftAppear">
+            <div className="flex gap-5 leftAppear justify-center md:justify-start">
               <ButtonComp2 txt2="Menu" />
 
               <ButtonComp txt1="Book A Table" />
