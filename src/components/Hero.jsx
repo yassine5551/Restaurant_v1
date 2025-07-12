@@ -20,17 +20,17 @@ const Hero = () => {
           <div className="absolute md:top-[-9rem] top-[-6rem] md:left-[-2rem] left-[1rem]">
             <img src={heroLogo} alt="" width={90} className="spinAnim " />
           </div>
-          <div className="flex flex-col gap-8 ">
+          <div className="flex flex-col gap-8 text-center">
             <h1 className="tracking-wide font-bold text-4xl lg:text-5xl leading-normal mb-2 md:mb-6 text-secondary ">
               We provide the <br />
-              <span className="text-primary">best food for you</span>
+              <span className="text-primary md:text-4xl text-3xl">best food for you</span>
             </h1>
-            <p className="text-sm text-smT">
+            <p className="text-sm text-smT text-center md:text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               <br /> sed do eiusmod tempor incididunt <br /> ut labore et dolore
               magna aliqua.
             </p>
-            <div className="flex gap-5">
+            <div className="flex gap-5 justify-center md:justify-start">
               <ButtonComp2 txt2="Menu" />
 
               <ButtonComp txt1="Book A Table" />

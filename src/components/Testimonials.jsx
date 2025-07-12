@@ -73,7 +73,7 @@ const Testimonials = () => {
           eiusmod tempor incididunt
         </span>
         <Swiper
-          modules={[A11y, Autoplay, Pagination]}
+          modules={[ Autoplay, Pagination]}
           spaceBetween={50}
           slidesPerView={1}
           pagination={{

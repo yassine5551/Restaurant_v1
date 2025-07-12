@@ -10,6 +10,8 @@ import Footer from "../components/Footer";
 const Accuile = () => {
   return (
     <>
+    <div className="mx-[7%]">
+
       <Header />
       <Hero />
       <Cards />
@@ -18,6 +20,7 @@ const Accuile = () => {
       <Testimonials />
       <NewsLatter />
       <Footer />
+    </div>
     </>
   );
 };

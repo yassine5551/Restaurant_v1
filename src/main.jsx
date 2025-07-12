@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
-import Accuile from "./pages/Accuile";
+// import Accuile from "./pages/Accuile";
 import About from "./pages/About";
 import ChefPage from "./pages/ChefPage";
 import Gallery from "./pages/Gallery";
@@ -17,7 +17,7 @@ import Menu from "./pages/Menu";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Accuile />,
+    element: <App />,
   },
   {
     path: "/menu",

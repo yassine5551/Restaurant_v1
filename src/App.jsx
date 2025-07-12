@@ -11,6 +11,8 @@ function App() {
   return (
     <>
     <div className="mx-[7%]">
+
+    
       <Header />
       <Hero />
       <Cards />
